@@ -15,7 +15,7 @@ def get_weather(city):
   name = weather['name']
   desc = weather['weather'][0]['description']
   temp = weather['main']['temp']
-  return str(name) + ' ' + str(desc) + ' ' + str(temp)
+  label['text'] = str(name) + ' ' + str(desc) + ' ' + str(temp)
 
 
 def test_function(entry):
